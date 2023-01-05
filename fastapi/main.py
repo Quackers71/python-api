@@ -2,6 +2,17 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/")
+# request Get method url: "/"
+
+# Method and Path
+@app.get("/") 
+async def root(): # funtion root
+    return {"message": "Hello World!"}
+
+@app.get("/api") 
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "welcome to my api"}
+
+@app.get("/posts")
+def get_posts():
+    return {"data": "This is your posts"}

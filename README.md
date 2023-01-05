@@ -8,8 +8,12 @@ Setting up your Virtual Env on Windows
 ```
 cd {project dir}
 py -3 -m venv {name}
+```
+- Run the below command in bash then check the (venv) $ in Bash
+```
 venv/Scripts/activate.bat
 ```
+- Restart both CMD and Bash Terminals and you should see (venv) in front of each command prompt
 - From View > Command Palette - check the '.\fastapi\venv\Scripts\python.exe' is selected as per below :</br></br>
 ![](./python-interpreter-path.png)</br></br>
 - https://fastapi.tiangolo.com/tutorial/</br>
@@ -20,13 +24,26 @@ pip freeze # to list all the installed packages
 ```
 To run your App (in Bash):
 ```
-$ uvicorn main:app
-INFO:     Started server process [5816]
+$ uvicorn main:app --reload
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [26976] using WatchFiles
+INFO:     Started server process [15252]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-INFO:     127.0.0.1:52533 - "GET / HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52533 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Started server process [18832]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:60060 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60060 - "GET /api HTTP/1.1" 200 OK
 ```
-Then goto : http://127.0.0.1:8000 and you should receive :</br></br>
-{"message":"Hello World"}</br>
+Then goto : http://127.0.0.1:8000 and you should receive in your browser :</br></br>
+```
+{"message":"Hello World"}
+
+
+
+```
+#### Links
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+- https://www.postman.com/downloads/
