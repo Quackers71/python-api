@@ -47,3 +47,4 @@ Then goto : http://127.0.0.1:8000 and you should receive in your browser :</br><
 #### Links
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
 - https://www.postman.com/downloads/
+- https://docs.pydantic.dev/usage/types/
