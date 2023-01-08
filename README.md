@@ -48,5 +48,7 @@ Then goto : http://127.0.0.1:8000 and you should receive in your browser :</br><
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
 - https://www.postman.com/downloads/
 - https://docs.pydantic.dev/usage/types/
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+</br></br>
 #### CRUD (Create, Read, Update & Delete)
 ![](./CRUD-Functionality.png)
