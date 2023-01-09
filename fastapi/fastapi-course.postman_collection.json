@@ -46,7 +46,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"top beaches in florida\",\r\n    \"content\": \"check out these awesome beaches\",\r\n    \"id\": 3\r\n}",
+					"raw": "{\r\n    \"title\": \"top beaches in florida\",\r\n    \"content\": \"check out these awesome beaches\",\r\n    \"rating\": 4\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -72,9 +72,31 @@
 		},
 		{
 			"name": "Get One Post",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/posts/49692",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"posts",
+						"49692"
+					]
+				}
 			},
 			"response": []
 		},
@@ -82,15 +104,45 @@
 			"name": "Get latest",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/posts/latest",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"posts",
+						"latest"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Delete Post",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/posts/66",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"posts",
+						"66"
+					]
+				}
 			},
 			"response": []
 		}
