@@ -52,3 +52,6 @@ Then goto : http://127.0.0.1:8000 and you should receive in your browser :</br><
 </br></br>
 #### CRUD (Create, Read, Update & Delete)
 ![](./CRUD-Functionality.png)
+</br></br>
+#### Postman CRUD - All the API Calls
+![](./postman-crud.png)
