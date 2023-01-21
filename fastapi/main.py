@@ -42,7 +42,7 @@ def create_posts(post: Post):
     print(post.dict())
 
     post_dict = post.dict()
-    post_dict['id'] =  randrange(3, 100)
+    post_dict['id'] =  randrange(3, 1000)
     my_posts.append(post_dict)
     return {"data": post_dict}
 
@@ -74,3 +74,5 @@ def delete_post(id: int):
     print(index,id)
     my_posts.pop(index)
     return Response(status_code=status.HTTP_204_NO_CONTENT)
+
+# 2:10:31
